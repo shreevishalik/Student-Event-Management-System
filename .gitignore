@@ -1,0 +1,19 @@
+# Ignore all node_modules everywhere
+**/node_modules/
+
+# Ignore all build folders (React dist and Spring target)
+**/dist/
+**/target/
+
+# Ignore all environment secrets
+**/.env
+**/.env.local
+
+# Ignore OS/IDE files
+**/.DS_Store
+**/.idea/
+**/.vscode/
+
+# Ignore Java binaries
+**/*.class
+**/*.jar
