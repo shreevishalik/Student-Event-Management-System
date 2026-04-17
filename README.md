@@ -74,6 +74,7 @@ The application will be accessible at http://localhost:5173.
 
 ## 📂 Project Structure
 
+```text
 ip_mini/
 ├── backend/
 │   ├── auth/            # Port 8080: User Auth & JWT
