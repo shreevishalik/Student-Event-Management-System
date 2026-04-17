@@ -73,11 +73,13 @@ npm run dev
 The application will be accessible at http://localhost:5173.
 
 📂 Project Structure
+
+ip_mini/
 ├── backend/
 │   ├── auth/      # Port 8080: User Auth & JWT
 │   ├── student/   # Port 8081: Student Profiles
 │   └── event/     # Port 8083: Events & Registrations
-|   └── faculty/   # Port 8082: Faculty Profiles (optional)
+|   └── faculty/   # Port 8082: Faculty microservice (optional but exists!)
 ├── frontend/
 │   ├── src/
 │   │   ├── App.tsx        # Central logic, Routing, & Global Styles
@@ -88,9 +90,10 @@ The application will be accessible at http://localhost:5173.
 
 🔗 API Documentation Summary
 
-Service,Method,Endpoint,Description
-Auth,POST,/api/auth/register,User signup
-Auth,POST,/api/auth/login,Returns JWT & User Role
-Student,POST,/api/students,Save student profile details
-Event,POST,/api/events,Create new event (Admin only)
-Event,POST,/api/events/{eId}/register/{sId},Register student to event
+| Service | Method | Endpoint | Description |
+| :--- | :--- | :--- | :--- |
+| **Auth** | `POST` | `/api/auth/register` | User signup |
+| **Auth** | `POST` | `/api/auth/login` | Returns JWT & User Role |
+| **Student** | `POST` | `/api/students` | Save student profile details |
+| **Event** | `POST` | `/api/events` | Create new event (Admin only) |
+| **Event** | `POST` | `/api/events/{eId}/register/{sId}` | Register student to event |
