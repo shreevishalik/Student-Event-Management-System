@@ -33,6 +33,23 @@ The application is architected into four independent layers that communicate ove
 
 ---
 
+## 🔐 Distributed Security & JWT Handling
+
+The system implements a **Stateless Authentication Architecture** using JSON Web Tokens (JWT). This allows for secure communication across independent microservices without requiring a centralized session store.
+
+### **The Authentication Flow**
+1.  **Issue:** The `Auth Service` validates credentials and generates a signed JWT containing the user's `ID`, `Role`, and `Expiration`.
+2.  **Storage:** The Frontend stores this token in `localStorage` or `sessionStorage`.
+3.  **Propagation:** Every subsequent request to the `Student` or `Event` services includes the token in the `Authorization: Bearer <Token>` header.
+4.  **Validation:** Each microservice independently validates the token signature using a shared **Secret Key**, ensuring the request is authentic and the user has the required permissions (e.g., `ROLE_ADMIN`).
+
+### **Security Features**
+* **Role-Based Access Control (RBAC):** Admin dashboards are protected both on the Frontend (via React routing) and the Backend (via Spring Security's `@PreAuthorize`).
+* **Statelessness:** Since the services are stateless, any service instance can handle any request, making the system horizontally scalable.
+* **Token Expiry:** Tokens are configured with a Time-To-Live (TTL) to minimize the window of risk if a token is intercepted.
+
+---
+
 ## 🛠️ Technical Stack
 
 | Layer | Technology |
@@ -88,6 +105,9 @@ ip_mini/
 │   └── package.json     # React dependencies
 ├── .gitignore           # Global Master Ignore file
 └── README.md            # Project Documentation
+```
+
+---
 
 🔗 API Documentation Summary
 
