@@ -72,7 +72,7 @@ npm install
 npm run dev
 The application will be accessible at http://localhost:5173.
 
-📂 Project Structure
+### **Project Structure**
 
 ip_mini/
 ├── backend/
