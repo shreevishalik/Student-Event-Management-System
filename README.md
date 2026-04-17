@@ -61,16 +61,16 @@ spring.data.mongodb.uri=mongodb://localhost:27017/event_db
 jwt.secret=YourSuperSecretKeyHere
 
 ### **3. Launching the Services**
-Execute the following in separate terminal windows:
-Auth Service: (Bash) cd backend/auth-service && mvn spring-boot:run
-Student Service: (Bash) cd backend/student-service && mvn spring-boot:run
-Event Service: (Bash) cd backend/event-service && mvn spring-boot:run
+* Execute the following in separate terminal windows:
+* Auth Service: (Bash) cd backend/auth-service && mvn spring-boot:run
+* Student Service: (Bash) cd backend/student-service && mvn spring-boot:run
+* Event Service: (Bash) cd backend/event-service && mvn spring-boot:run
 
 ### **4. Frontend Deployment**
-(Bash) cd frontend
-npm install
-npm run dev
-The application will be accessible at http://localhost:5173.
+* (Bash) cd frontend
+* npm install
+* npm run dev
+* The application will be accessible at http://localhost:5173.
 
 ## 📂 Project Structure
 
