@@ -1,4 +1,4 @@
-# EventX: Enterprise-Grade Microservices Event Management System
+# EventX Microservices Event Management System
 
 **EventX** is a sophisticated, full-stack distributed system designed to manage campus events and student registrations. By utilizing a **Microservices Architecture**, the platform ensures high availability, service independence, and specialized data management across multiple MongoDB instances.
 
