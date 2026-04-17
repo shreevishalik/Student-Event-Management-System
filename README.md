@@ -72,21 +72,21 @@ npm install
 npm run dev
 The application will be accessible at http://localhost:5173.
 
-### **Project Structure**
+## 📂 Project Structure
 
 ip_mini/
 ├── backend/
-│   ├── auth/      # Port 8080: User Auth & JWT
-│   ├── student/   # Port 8081: Student Profiles
-│   └── event/     # Port 8083: Events & Registrations
-|   └── faculty/   # Port 8082: Faculty microservice (optional but exists!)
+│   ├── auth/            # Port 8080: User Auth & JWT
+│   ├── student/         # Port 8081: Student Profiles
+│   ├── event/           # Port 8083: Events & Registrations
+│   └── faculty/         # Port 8082: Faculty microservice (optional)
 ├── frontend/
 │   ├── src/
-│   │   ├── App.tsx        # Central logic, Routing, & Global Styles
-│   │   └── api/           # Axios interceptors & Base configurations
-│   └── package.json       # React dependencies
-├── .gitignore             # Global Master Ignore file
-└── README.md              # Project Documentation
+│   │   ├── App.tsx      # Central logic, Routing, & Global Styles
+│   │   └── api/         # Axios interceptors & Base configurations
+│   └── package.json     # React dependencies
+├── .gitignore           # Global Master Ignore file
+└── README.md            # Project Documentation
 
 🔗 API Documentation Summary
 
